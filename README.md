@@ -114,7 +114,6 @@ Copy code
 
 ---
 
-👉 Do you want me to also prepare a **demo `index.html` screenshot preview mockup** (as an image) that you can drop into the README so your GitHub repo instantly looks more professional?
 
 
 
