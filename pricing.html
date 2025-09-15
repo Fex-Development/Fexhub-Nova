@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pricing — Fexhub</title>
+  <meta name="description" content="Simple, scalable pricing for VPS, Game Hosting, Web Hosting, and Add-ons. DDoS and snapshots included.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Canonical & robots -->
+<link rel="canonical" href="https://your-domain.example/page-slug" />
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Fexhub — High-performance Hosting" />
+<meta property="og:description" content="Game servers, VPS and web hosting on NVMe with global POPs, DDoS, and snapshots." />
+<meta property="og:url" content="https://your-domain.example/" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://your-domain.example/assets/img/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Fexhub — High-performance Hosting" />
+<meta name="twitter:description" content="Game servers, VPS and web hosting on NVMe with global POPs, DDoS, and snapshots." />
+<meta name="twitter:image" content="https://your-domain.example/assets/img/og-cover.png" />
+
+</head>
+<body>
+  <a id="top"></a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+  <div class="navwrap">
+    <a class="brand" href="index.html" aria-label="Fexhub">
+      <div class="logo">FH</div><div class="brand-name">Fexhub</div>
+    </a>
+
+    <!-- Mobile toggle -->
+    <input id="nav-toggle" type="checkbox" aria-label="Toggle menu">
+    <label class="menu-btn" for="nav-toggle">Menu</label>
+
+    <nav class="nav" role="navigation" aria-label="Main">
+      <a href="index.html">Home</a>
+
+      <!-- Services (dropdown) -->
+      <div class="menu" tabindex="0">
+        <!-- Mobile tap toggle -->
+        <input id="m-services" type="checkbox" aria-hidden="true">
+        <label for="m-services">Services <i class="chev"></i></label>
+        <div class="dropdown" aria-label="Services submenu">
+          <a href="services.html#games">Game Hosting</a>
+          <a href="services.html#vps">VPS</a>
+          <a href="services.html#web">Web Hosting</a>
+          <a href="services.html#addons">Add-ons</a>
+        </div>
+      </div>
+
+      <!-- Docs (mega menu) -->
+      <div class="menu" tabindex="0">
+        <input id="m-docs" type="checkbox" aria-hidden="true">
+        <label for="m-docs">Docs <i class="chev"></i></label>
+        <div class="mega" aria-label="Docs mega menu">
+          <div class="col">
+            <div class="group">Game Servers</div>
+            <a href="docs-minecraft.html"><span class="tag">MC</span> Minecraft</a>
+            <a href="docs-fps.html"><span class="tag">FPS</span> CS/Rust</a>
+          </div>
+          <div class="col">
+            <div class="group">Compute & Web</div>
+            <a href="docs-vps.html"><span class="tag">VPS</span> VPS Hosting</a>
+            <a href="docs-web.html"><span class="tag">WEB</span> Web Hosting</a>
+          </div>
+          <div class="col">
+            <div class="group">Platform</div>
+            <a href="docs-dns.html"><span class="tag">DNS</span> DNS & SSL</a>
+            <a href="docs-backups.html"><span class="tag">BK</span> Backups</a>
+            <a href="docs-billing.html"><span class="tag">$</span> Billing</a>
+            <a href="docs-troubleshooting.html"><span class="tag">FX</span> Troubleshooting</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Company (dropdown) -->
+      <div class="menu" tabindex="0">
+        <input id="m-company" type="checkbox" aria-hidden="true">
+        <label for="m-company">Company <i class="chev"></i></label>
+        <div class="dropdown" aria-label="Company submenu">
+          <a href="about.html">About</a>
+          <a href="careers.html">Careers</a>
+          <a href="blog.html">Blog</a>
+          <a href="changelog.html">Changelog</a>
+        </div>
+      </div>
+
+      <!-- Support (dropdown) -->
+      <div class="menu" tabindex="0">
+        <input id="m-support" type="checkbox" aria-hidden="true">
+        <label for="m-support">Support <i class="chev"></i></label>
+        <div class="dropdown" aria-label="Support submenu">
+          <a href="docs.html">Docs Hub</a>
+          <a href="status.html">Status</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html" class="nav-cta">Get Started</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <h1>Pricing</h1>
+    <p class="muted">Transparent plans for every workload. All plans include DDoS protection, snapshots, and 24/7 support.</p>
+
+    <!-- Quick nav -->
+    <nav class="soft" style="display:flex;gap:10px;flex-wrap:wrap; margin-top:10px">
+      <a class="btn-outline" href="#vps">VPS</a>
+      <a class="btn-outline" href="#game">Game Hosting</a>
+      <a class="btn-outline" href="#web">Web Hosting</a>
+      <a class="btn-outline" href="#addons">Add-ons</a>
+    </nav>
+
+    <!-- VPS PLANS -->
+    <section id="vps" class="section">
+      <h2 style="margin-top:0">VPS</h2>
+      <p class="muted">KVM instances with NVMe storage. Scale vertically anytime.</p>
+
+      <div class="plan-grid">
+        <!-- Starter -->
+        <article class="card plan" data-tier="starter">
+          <header class="plan-head">
+            <h3>Starter</h3>
+            <div class="price">$3.99<span class="small">/mo</span></div>
+          </header>
+          <ul class="plan-features">
+            <li>1 vCPU</li>
+            <li>2GB RAM</li>
+            <li>30GB NVMe</li>
+            <li>2TB transfer</li>
+            <li>Snapshots: Daily</li>
+          </ul>
+          <footer class="plan-cta"><a class="btn" href="contact.html">Choose</a></footer>
+        </article>
+
+        <!-- Growth (popular) -->
+        <article class="card plan is-popular" data-tier="growth">
+          <header class="plan-head">
+            <h3>Growth</h3>
+            <div class="price">$7.99<span class="small">/mo</span></div>
+          </header>
+          <ul class="plan-features">
+            <li>2 vCPU</li>
+            <li>4GB RAM</li>
+            <li>60GB NVMe</li>
+            <li>Unlimited transfer</li>
+            <li>Snapshots: Daily</li>
+          </ul>
+          <footer class="plan-cta"><a class="btn" href="contact.html">Choose</a></footer>
+          <div class="plan-ribbon" aria-hidden="true">POPULAR</div>
+        </article>
+
+        <!-- Pro -->
+        <article class="card plan" data-tier="pro">
+          <header class="plan-head">
+            <h3>Pro</h3>
+            <div class="price">$14.99<span class="small">/mo</span></div>
+          </header>
+          <ul class="plan-features">
+            <li>4 vCPU</li>
+            <li>8GB RAM</li>
+            <li>120GB NVMe</li>
+            <li>Unlimited transfer</li>
+            <li>Snapshots: Twice daily</li>
+          </ul>
+          <footer class="plan-cta"><a class="btn" href="contact.html">Choose</a></footer>
+        </article>
+      </div>
+
+      <div class="soft" style="margin-top:12px">
+        <strong>All VPS include:</strong> root access, IPv4, IPv6, firewall, region selection, and quick resize. See <a href="docs-vps.html">VPS Docs</a>.
+      </div>
+    </section>
+
+    <!-- GAME HOSTING -->
+    <section id="game" class="section">
+      <h2 style="margin-top:0">Game Hosting</h2>
+      <p class="muted">Low-latency nodes with tuned CPU and built-in DDoS protection.</p>
+
+      <div class="plan-grid">
+        <article class="card plan">
+          <header class="plan-head">
+            <h3>Minecraft: Base</h3>
+            <div class="price">$2.99<span class="small">/mo</span></div>
+          </header>
+          <ul class="plan-features">
+            <li>2GB RAM</li>
+            <li>1 vCPU boosted</li>
+            <li>NVMe storage</li>
+            <li>Paper/Fabric</li>
+            <li>Snapshots: Daily</li>
+          </ul>
+          <footer class="plan-cta"><a class="btn" href="contact.html">Choose</a></footer>
+        </article>
+
+        <article class="card plan is-popular">
+          <header class="plan-head">
+            <h3>Minecraft: Community</h3>
+            <div class="price">$5.99<span class="small">/mo</span></div>
+          </header>
+          <ul class="plan-features">
+            <li>4GB RAM</li>
+            <li>2 vCPU boosted</li>
+            <li>NVMe storage</li>
+            <li>Modpacks + plugins</li>
+            <li>Snapshots: Daily</li>
+          </ul>
+          <footer class="plan-cta"><a class="btn" href="contact.html">Choose</a></footer>
+          <div class="plan-ribbon" aria-hidden="true">POPULAR</div>
+        </article>
+
+        <article class="card plan">
+          <header class="plan-head">
+            <h3>FPS: CS/Rust</h3>
+            <div class="price">$7.99<span class="small">/mo</span></div>
+          </header>
+          <ul class="plan-features">
+            <li>2 vCPU high clock</li>
+            <li>4GB RAM</li>
+            <li>DDoS L3/L4</li>
+            <li>Tick 64/128 (CS)</li>
+            <li>Snapshots: Daily</li>
+          </ul>
+          <footer class="plan-cta"><a class="btn" href="contact.html">Choose</a></footer>
+        </article>
+      </div>
+
+      <div class="soft" style="margin-top:12px">
+        <strong>Includes:</strong> console access, SFTP, auto-restart, region choice. See <a href="docs-minecraft.html">Minecraft Docs</a> and <a href="docs-fps.html">FPS Docs</a>.
+      </div>
+    </section>
+
+    <!-- WEB HOSTING -->
+    <section id="web" class="section">
+      <h2 style="margin-top:0">Web Hosting</h2>
+      <p class="muted">Managed NGINX, app stacks (Node/Python/PHP), and static sites with Auto-SSL.</p>
+
+      <div class="plan-grid">
+        <article class="card plan">
+          <header class="plan-head">
+            <h3>Static Lite</h3>
+            <div class="price">$1.99<span class="small">/mo</span></div>
+          </header>
+          <ul class="plan-features">
+            <li>Static site</li>
+            <li>Edge caching</li>
+            <li>Free SSL</li>
+            <li>Bandwidth: 1TB</li>
+            <li>Snapshots: Daily</li>
+          </ul>
+          <footer class="plan-cta"><a class="btn" href="contact.html">Choose</a></footer>
+        </article>
+
+        <article class="card plan is-popular">
+          <header class="plan-head">
+            <h3>App Runner</h3>
+            <div class="price">$4.99<span class="small">/mo</span></div>
+          </header>
+          <ul class="plan-features">
+            <li>Node/Python/PHP</li>
+            <li>Managed NGINX</li>
+            <li>Free SSL</li>
+            <li>Bandwidth: 2TB</li>
+            <li>Snapshots: Daily</li>
+          </ul>
+          <footer class="plan-cta"><a class="btn" href="contact.html">Choose</a></footer>
+          <div class="plan-ribbon" aria-hidden="true">POPULAR</div>
+        </article>
+
+        <article class="card plan">
+          <header class="plan-head">
+            <h3>App Pro</h3>
+            <div class="price">$9.99<span class="small">/mo</span></div>
+          </header>
+          <ul class="plan-features">
+            <li>Node/Python/PHP</li>
+            <li>Autoscale upstream</li>
+            <li>Free SSL + HSTS</li>
+            <li>Bandwidth: 5TB</li>
+            <li>Snapshots: Twice daily</li>
+          </ul>
+          <footer class="plan-cta"><a class="btn" href="contact.html">Choose</a></footer>
+        </article>
+      </div>
+
+      <div class="soft" style="margin-top:12px">
+        <strong>Includes:</strong> HTTP/2, security headers, Git deploys (bring your CI). See <a href="docs-web.html">Web Docs</a>.
+      </div>
+    </section>
+
+    <!-- ADD-ONS -->
+    <section id="addons" class="section">
+      <h2 style="margin-top:0">Add-ons</h2>
+      <div class="plan-grid">
+        <article class="card plan plan-addon">
+          <header class="plan-head"><h3>Reserved IP</h3><div class="price">+$1<span class="small">/mo</span></div></header>
+          <ul class="plan-features">
+            <li>Static IPv4</li><li>Stable DNS</li><li>Reverse DNS support</li>
+          </ul>
+          <footer class="plan-cta"><a class="btn" href="contact.html">Add</a></footer>
+        </article>
+
+        <article class="card plan plan-addon">
+          <header class="plan-head"><h3>Backups+</h3><div class="price">+$1<span class="small">/mo</span></div></header>
+          <ul class="plan-features">
+            <li>Higher retention</li><li>Geo-redundant</li><li>Fast restores</li>
+          </ul>
+          <footer class="plan-cta"><a class="btn" href="contact.html">Add</a></footer>
+        </article>
+
+        <article class="card plan plan-addon">
+          <header class="plan-head"><h3>Premium Support</h3><div class="price">+$3<span class="small">/mo</span></div></header>
+          <ul class="plan-features">
+            <li>Priority queue</li><li>Dedicated channel</li><li>SLA options</li>
+          </ul>
+          <footer class="plan-cta"><a class="btn" href="contact.html">Add</a></footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- COMPARISON -->
+    <section class="section">
+      <h2 style="margin-top:0">Feature Comparison</h2>
+      <div class="soft">
+        <table class="compare">
+          <thead>
+            <tr><th>Feature</th><th>VPS</th><th>Game</th><th>Web</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>DDoS</td><td>✔</td><td>✔</td><td>✔</td></tr>
+            <tr><td>Snapshots</td><td>Daily</td><td>Daily</td><td>Daily</td></tr>
+            <tr><td>Regions</td><td>12</td><td>12</td><td>Global edge</td></tr>
+            <tr><td>Support</td><td>Email/Chat</td><td>Email/Chat</td><td>Email/Chat</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <h2 style="margin-top:0">Pricing FAQ</h2>
+      <details open>
+        <summary><strong>Are upgrades pro-rated?</strong></summary>
+        <p>Yes. When you change plans mid-cycle, we only charge the difference for the remainder of the period.</p>
+      </details>
+      <details>
+        <summary><strong>Any hidden fees?</strong></summary>
+        <p>No hidden fees. Taxes may apply depending on your region.</p>
+      </details>
+      <details>
+        <summary><strong>Can I switch regions?</strong></summary>
+        <p>Yes — take a snapshot and restore in the new region for minimal downtime.</p>
+      </details>
+    </section>
+  </main>
+
+    <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="brand" style="gap:10px"><div class="logo">FH</div><div class="brand-name">Fexhub</div></div>
+        <p class="muted" style="margin-top:10px">A free, advanced HTML+CSS theme for hosting providers.</p>
+        <div style="margin-top:10px"><span class="badge">SLA 99.99%</span> <span class="badge">NVMe</span> <span class="badge">Global Edge</span></div>
+      </div>
+      <div>
+        <div class="footer-title">Product</div>
+        <a class="footer-link" href="services.html">Services</a>
+        <a class="footer-link" href="pricing.html">Pricing</a>
+        <a class="footer-link" href="network.html">Network</a>
+        <a class="footer-link" href="changelog.html">Changelog</a>
+      </div>
+      <div>
+        <div class="footer-title">Company</div>
+        <a class="footer-link" href="about.html">About</a>
+        <a class="footer-link" href="blog.html">Blog</a>
+        <a class="footer-link" href="careers.html">Careers</a>
+        <a class="footer-link" href="contact.html">Contact</a>
+      </div>
+      <div>
+        <div class="footer-title">Legal</div>
+        <a class="footer-link" href="terms.html">Terms</a>
+        <a class="footer-link" href="privacy.html">Privacy</a>
+        <a class="footer-link" href="status.html">Status</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2025 Fexhub — Free Hosting Theme</div>
+      <div>Built with pure HTML & CSS</div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#top" class="backtotop" aria-label="Back to top"><span class="arrow">▲</span> Top</a>
+</body>
+</html>

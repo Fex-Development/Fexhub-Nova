@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FAQ — Fexhub</title>
+  <meta name="description" content="Frequently asked questions for Fexhub hosting. Plans, billing, DNS, SSL, and technical topics.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Canonical & robots -->
+<link rel="canonical" href="https://your-domain.example/page-slug" />
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Fexhub — High-performance Hosting" />
+<meta property="og:description" content="Game servers, VPS and web hosting on NVMe with global POPs, DDoS, and snapshots." />
+<meta property="og:url" content="https://your-domain.example/" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://your-domain.example/assets/img/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Fexhub — High-performance Hosting" />
+<meta name="twitter:description" content="Game servers, VPS and web hosting on NVMe with global POPs, DDoS, and snapshots." />
+<meta name="twitter:image" content="https://your-domain.example/assets/img/og-cover.png" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I point my domain to my server?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Create A/AAAA records at your registrar pointing your domain or subdomain to your server's IP. Example: A @ → 203.0.113.10, TTL 300."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I enable HTTPS (SSL) on my site or panel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Point DNS to your server, then enable Auto-SSL in the panel. A Let's Encrypt certificate is issued after DNS resolves. If behind a CDN, allow HTTP validation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What DNS records do I need for Minecraft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use an A record to the server IP or add an SRV record (_minecraft._tcp) to hide the port. Example: SRV to play.yourdomain.com on 25565."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you support reverse DNS (rDNS) for VPS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Provide the PTR hostname and assigned IP via ticket. rDNS improves mail deliverability and certain whitelists."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does DNS propagation take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most changes apply within minutes, but full global propagation can take up to 24 hours. Lower TTLs can speed this up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I migrate with zero downtime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Snapshot → restore in new region → test on a temporary subdomain → lower TTL → switch DNS → raise TTL after cutover."
+      }
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+  <a id="top"></a>
+  <!-- HEADER -->
+  <header class="site-header">
+  <div class="navwrap">
+    <a class="brand" href="index.html" aria-label="Fexhub">
+      <div class="logo">FH</div><div class="brand-name">Fexhub</div>
+    </a>
+
+    <!-- Mobile toggle -->
+    <input id="nav-toggle" type="checkbox" aria-label="Toggle menu">
+    <label class="menu-btn" for="nav-toggle">Menu</label>
+
+    <nav class="nav" role="navigation" aria-label="Main">
+      <a href="index.html">Home</a>
+
+      <!-- Services (dropdown) -->
+      <div class="menu" tabindex="0">
+        <!-- Mobile tap toggle -->
+        <input id="m-services" type="checkbox" aria-hidden="true">
+        <label for="m-services">Services <i class="chev"></i></label>
+        <div class="dropdown" aria-label="Services submenu">
+          <a href="services.html#games">Game Hosting</a>
+          <a href="services.html#vps">VPS</a>
+          <a href="services.html#web">Web Hosting</a>
+          <a href="services.html#addons">Add-ons</a>
+        </div>
+      </div>
+
+      <!-- Docs (mega menu) -->
+      <div class="menu" tabindex="0">
+        <input id="m-docs" type="checkbox" aria-hidden="true">
+        <label for="m-docs">Docs <i class="chev"></i></label>
+        <div class="mega" aria-label="Docs mega menu">
+          <div class="col">
+            <div class="group">Game Servers</div>
+            <a href="docs-minecraft.html"><span class="tag">MC</span> Minecraft</a>
+            <a href="docs-fps.html"><span class="tag">FPS</span> CS/Rust</a>
+          </div>
+          <div class="col">
+            <div class="group">Compute & Web</div>
+            <a href="docs-vps.html"><span class="tag">VPS</span> VPS Hosting</a>
+            <a href="docs-web.html"><span class="tag">WEB</span> Web Hosting</a>
+          </div>
+          <div class="col">
+            <div class="group">Platform</div>
+            <a href="docs-dns.html"><span class="tag">DNS</span> DNS & SSL</a>
+            <a href="docs-backups.html"><span class="tag">BK</span> Backups</a>
+            <a href="docs-billing.html"><span class="tag">$</span> Billing</a>
+            <a href="docs-troubleshooting.html"><span class="tag">FX</span> Troubleshooting</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Company (dropdown) -->
+      <div class="menu" tabindex="0">
+        <input id="m-company" type="checkbox" aria-hidden="true">
+        <label for="m-company">Company <i class="chev"></i></label>
+        <div class="dropdown" aria-label="Company submenu">
+          <a href="about.html">About</a>
+          <a href="careers.html">Careers</a>
+          <a href="blog.html">Blog</a>
+          <a href="changelog.html">Changelog</a>
+        </div>
+      </div>
+
+      <!-- Support (dropdown) -->
+      <div class="menu" tabindex="0">
+        <input id="m-support" type="checkbox" aria-hidden="true">
+        <label for="m-support">Support <i class="chev"></i></label>
+        <div class="dropdown" aria-label="Support submenu">
+          <a href="docs.html">Docs Hub</a>
+          <a href="status.html">Status</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html" class="nav-cta">Get Started</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="section">
+  <h2>Domains, DNS & SSL</h2>
+
+  <details open>
+    <summary><strong>How do I point my domain to my server?</strong></summary>
+    <p>First, find your server’s public IP in the panel. In your domain registrar’s DNS settings, create an <code>A</code> record:</p>
+    <pre><code>Type: A
+Name/Host: @
+Value: 203.0.113.10
+TTL: 300 (or default)</code></pre>
+    <p>For a subdomain (e.g., <code>play.yourdomain.com</code>) use:</p>
+    <pre><code>Type: A
+Name/Host: play
+Value: 203.0.113.10
+TTL: 300</code></pre>
+    <p>IPv6? Add an <code>AAAA</code> record pointing to your IPv6 address. Propagation can take up to an hour.</p>
+  </details>
+
+  <details>
+    <summary><strong>How do I enable HTTPS (SSL) on my site or panel?</strong></summary>
+    <p>Point your domain first (A/AAAA). Then, in the panel, enable <em>Auto-SSL</em>. We issue a Let’s Encrypt certificate automatically after DNS resolves. If you use a CDN/proxy, make sure it allows HTTP (80) during validation.</p>
+  </details>
+
+  <details>
+    <summary><strong>What DNS records do I need for Minecraft?</strong></summary>
+    <p>Either point the root/subdomain with an <code>A</code> record to the server IP, or set up a SRV record if you don’t want to expose a port:</p>
+    <pre><code>_minecraft._tcp.play.yourdomain.com  3600  IN  SRV  0 5 25565  play.yourdomain.com.</code></pre>
+  </details>
+
+  <details>
+    <summary><strong>Do you support reverse DNS (rDNS) for VPS?</strong></summary>
+    <p>Yes. Open a ticket with your PTR hostname and the assigned IP. rDNS helps with mail deliverability and some API whitelists.</p>
+  </details>
+
+  <details>
+    <summary><strong>How long does DNS propagation take?</strong></summary>
+    <p>Usually a few minutes; up to 24 hours globally. Lower TTLs can speed up changes.</p>
+  </details>
+
+  <details>
+    <summary><strong>How can I migrate with zero downtime?</strong></summary>
+    <p>Create a snapshot → restore in the new region → test using a temporary subdomain → lower TTL → switch DNS → raise TTL after cutover.</p>
+  </details>
+</section>
+
+    <h1>Frequently Asked Questions</h1>
+
+    <section class="section">
+      <h2>General</h2>
+      <details open><summary><strong>Do plans include DDoS protection?</strong></summary><p>Yes, included for Game Servers and VPS plans by default.</p></details>
+      <details><summary><strong>How fast is deployment?</strong></summary><p>Most servers are online in ~60 seconds after you click Deploy.</p></details>
+      <details><summary><strong>Where are your regions?</strong></summary><p>See the <a href="network.html">Network</a> page for an up-to-date list of POPs.</p></details>
+    </section>
+
+    <section class="section">
+      <h2>Billing</h2>
+      <details open><summary><strong>How do I get invoices?</strong></summary><p>Download PDFs in <em>Billing → Invoices</em>. You can optionally receive them by email.</p></details>
+      <details><summary><strong>Refund policy</strong></summary><p>Refunds are handled per policy timelines. Contact <a href="contact.html">Support</a> with your invoice #.</p></details>
+      <details><summary><strong>Pro-rated upgrades</strong></summary><p>Upgrades are pro-rated; you pay only the difference for the remaining cycle.</p></details>
+    </section>
+
+    <section class="section">
+      <h2>Technical</h2>
+      <details open><summary><strong>Can I bring a custom Docker image?</strong></summary><p>Yes. Use Custom Images under Game Servers or VPS and provide your container command/ports.</p></details>
+      <details><summary><strong>How do I point my domain?</strong></summary><p>Follow the <a href="docs-dns.html">DNS & SSL Guide</a> with A/AAAA/CNAME examples.</p></details>
+      <details><summary><strong>Backups & Snapshots</strong></summary><p>See <a href="docs-backups.html">Backups & Snapshots</a>; you can restore with one click.</p></details>
+    </section>
+  </main>
+
+   <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="brand" style="gap:10px"><div class="logo">FH</div><div class="brand-name">Fexhub</div></div>
+        <p class="muted" style="margin-top:10px">A free, advanced HTML+CSS theme for hosting providers.</p>
+        <div style="margin-top:10px"><span class="badge">SLA 99.99%</span> <span class="badge">NVMe</span> <span class="badge">Global Edge</span></div>
+      </div>
+      <div>
+        <div class="footer-title">Product</div>
+        <a class="footer-link" href="services.html">Services</a>
+        <a class="footer-link" href="pricing.html">Pricing</a>
+        <a class="footer-link" href="network.html">Network</a>
+        <a class="footer-link" href="changelog.html">Changelog</a>
+      </div>
+      <div>
+        <div class="footer-title">Company</div>
+        <a class="footer-link" href="about.html">About</a>
+        <a class="footer-link" href="blog.html">Blog</a>
+        <a class="footer-link" href="careers.html">Careers</a>
+        <a class="footer-link" href="contact.html">Contact</a>
+      </div>
+      <div>
+        <div class="footer-title">Legal</div>
+        <a class="footer-link" href="terms.html">Terms</a>
+        <a class="footer-link" href="privacy.html">Privacy</a>
+        <a class="footer-link" href="status.html">Status</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2025 Fexhub — Free Hosting Theme</div>
+      <div>Built with pure HTML & CSS</div>
+    </div>
+  </footer>
+  <a href="#top" class="backtotop" aria-label="Back to top"><span class="arrow">▲</span> Top</a>
+</body>
+</html>
