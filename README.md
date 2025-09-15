@@ -118,4 +118,4 @@ Free to use, modify, and redistribute. Attribution is appreciated.
 ## 🙌 Credits
 
 Built with ❤️ as a **free, open theme for hosting providers**.  
-Maintained by the [Fexhub](https://github.com/yourusername) project.
+Maintained by the [Fexhub](https://github.com/Fex-Development) project.
