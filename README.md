@@ -27,6 +27,7 @@ It’s designed for **hosting providers**, **game server communities**, and **de
 
 ## 📂 Structure
 
+```
 fexhub-nova/
 ├── index.html
 ├── about.html
@@ -43,24 +44,22 @@ fexhub-nova/
 ├── privacy.html
 │
 ├── docs/
-│ ├── docs.html
-│ ├── docs-minecraft.html
-│ ├── docs-fps.html
-│ ├── docs-vps.html
-│ ├── docs-web.html
-│ ├── docs-dns.html
-│ ├── docs-billing.html
-│ ├── docs-backups.html
-│ └── docs-troubleshooting.html
+│   ├── docs.html
+│   ├── docs-minecraft.html
+│   ├── docs-fps.html
+│   ├── docs-vps.html
+│   ├── docs-web.html
+│   ├── docs-dns.html
+│   ├── docs-billing.html
+│   ├── docs-backups.html
+│   └── docs-troubleshooting.html
 │
 └── assets/
-├── css/
-│ └── style.css
-├── img/
-└── fonts/
-
-yaml
-Copy code
+    ├── css/
+    │   └── style.css
+    ├── img/
+    └── fonts/
+```
 
 ---
 
@@ -69,62 +68,58 @@ Copy code
 1. **Clone or download**
    ```bash
    git clone https://github.com/yourusername/fexhub-nova.git
-Open index.html in your browser.
-No build step, no Node.js — just plain HTML/CSS.
-
-Edit content:
-
-Update text in *.html files
-
-Change colors in assets/css/style.css (--accent, --accent2, etc.)
-
-Replace demo logos/images in assets/img/
-
-Deploy to any static host:
-
-Netlify
-
-Vercel
-
-GitHub Pages
-
-or your cPanel/Apache/Nginx server.
-
-📖 Documentation
-Docs pack included: Minecraft, VPS, Web Hosting, DNS & SSL, Billing, Backups, Troubleshooting.
-
-SEO-friendly FAQ with JSON-LD so your Q&A can show up directly in Google results.
-
-Pricing page includes schema.org OfferCatalog structured data for rich snippets.
-
-🖼️ Screenshots
-(replace with real screenshots after deployment)
-
-Home	Pricing	Status
-
-🤝 Contributing
-Pull requests are welcome!
-If you want to add new pages, themes, or accessibility improvements:
-
-Fork the repo
-
-Create a new branch (git checkout -b feature/amazing-feature)
-
-Commit your changes
-
-Push and open a PR
-
-📜 License
-Released under the MIT License.
-Free to use, modify, and redistribute. Attribution is appreciated.
-
-🙌 Credits
-Built with ❤️ as a free, open theme for hosting providers.
-Maintained by the Fexhub project.
-
-yaml
-Copy code
+   ```
+2. Open `index.html` in your browser.  
+   No build step, no Node.js — just plain HTML/CSS.
+3. Edit content:
+   - Update text in `*.html` files
+   - Change colors in `assets/css/style.css` (`--accent`, `--accent2`, etc.)
+   - Replace demo logos/images in `assets/img/`
+4. Deploy to any static host:
+   - [Netlify](https://netlify.com)
+   - [Vercel](https://vercel.com)
+   - [GitHub Pages](https://pages.github.com)
+   - or your cPanel/Apache/Nginx server.
 
 ---
 
-👉 Do you want me to also generate **realistic preview screenshots in browser mockups** (like “laptop frame” style images) so you can drop them into the `assets/img/` folder and make the README shine?
+## 📖 Documentation
+
+- **Docs pack** included: Minecraft, VPS, Web Hosting, DNS & SSL, Billing, Backups, Troubleshooting.  
+- **SEO-friendly FAQ** with JSON-LD so your Q&A can show up directly in Google results.  
+- **Pricing page** includes schema.org `OfferCatalog` structured data for rich snippets.
+
+---
+
+## 🖼️ Screenshots
+
+*(replace with real screenshots after deployment)*
+
+| Home | Pricing | Status |
+|------|---------|--------|
+| ![Home](assets/img/demo-home.png) | ![Pricing](assets/img/demo-pricing.png) | ![Status](assets/img/demo-status.png) |
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome!  
+If you want to add new pages, themes, or accessibility improvements:
+1. Fork the repo
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes
+4. Push and open a PR
+
+---
+
+## 📜 License
+
+Released under the **MIT License**.  
+Free to use, modify, and redistribute. Attribution is appreciated.
+
+---
+
+## 🙌 Credits
+
+Built with ❤️ as a **free, open theme for hosting providers**.  
+Maintained by the [Fexhub](https://github.com/yourusername) project.
