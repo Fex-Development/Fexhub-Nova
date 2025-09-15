@@ -95,9 +95,9 @@ fexhub-nova/
 
 *(replace with real screenshots after deployment)*
 
-| Home | Pricing | Status |
+| Home | Pricing | Status | Carrers | Pricing | Status |
 |------|---------|--------|
-| ![Home](assets/img/demo-home.png) | ![Pricing](assets/img/demo-pricing.png) | ![Status](assets/img/demo-status.png) |
+| ![Home](assets/img/screencapture-127-0-0-1-5500-index-html-2025-09-16-00_13_27.png) | ![Pricing](assets/img/screencapture-127-0-0-1-5500-about-html-2025-09-16-00_14_32.png) | ![Status](assets/img/screencapture-127-0-0-1-5500-status-html-2025-09-16-00_15_16.png) | ![Carrers](assets/img/screencapture-127-0-0-1-5500-careers-html-2025-09-16-00_14_52.png) |
 
 ---
 
